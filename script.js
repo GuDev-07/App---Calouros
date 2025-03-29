@@ -15,3 +15,21 @@ navLinks.forEach(link => {
     });
 });
 //FINALIZADO HAMBURGUER MOBILE
+
+
+//EVENTOS
+let indice = 0;
+
+function mudarSlide(direcao) {
+    const carrossel = document.querySelector(".carrossel");
+    const totalEventos = document.querySelectorAll(".evento").length;
+
+    indice += direcao;
+    if (indice >= totalEventos) indice = 0;
+    if (indice < 0) indice = totalEventos - 1;
+
+    carrossel.style.transform = `translateX(-${indice * 100}%)`;
+}
+
+// Muda automaticamente a cada 5 segundos
+setInterval(() => mudarSlide(1), 5000);
