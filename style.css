@@ -1,213 +1,171 @@
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background: linear-gradient(90deg, #17807c, #6b2e83);
     color: #333;
-}
-
-.header {
-    background-color: rgb(23, 112, 108);
+  }
+  
+  /*INICIO DO HEADER*/ 
+  .header {
+    background: linear-gradient(90deg, #17807c, #6b2e83);
     color: white;
     text-align: center;
-    padding: 5px 0;
+    padding: 20px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.header img {
-    width: 90%; /* Ajusta a largura para ocupar no máximo 80% da tela */
-    max-width: 300px; /* Limite máximo para não ficar exageradamente grande */
-    height: auto; /* Mantém a proporção original da imagem */
+  }
+  
+  .header img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
     display: block;
-}
-
-.header h1 {
+    margin: 0 auto;
+  }
+  
+  .header h1 {
     font-size: 25px;
     margin-top: 10px;
-    text-align: center;
-}
-
-.navbar-links li {
-    font-size: 20px;
-}
-
-.navbar .navbar-links  {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    color: #fff;
-    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .menu-toggle {
     display: none;
-    text-decoration: none;
-}
-
-.navbar .navbar-links:hover  {
-    color: black;
-}
-
-
-/*MENU PRA CELULAR*/
-.menu-toggle {
     background: none;
     border: none;
-    cursor: pointer;
-    display: none; /* Hidden for larger screens */
-    padding: 1rem;
+    font-size: 2.5rem;
     position: absolute;
-    top: 10px; /* Adjusted positioning */
-    right: 10px; /* Aligned to the top-right corner */
-    font-size: 2.5rem;
+    top: 10px;
+    right: 10px;
     color: white;
-}
-
-
-.menu-icon {
-    font-size: 2.5rem;
-    color: white;
-}
-
-.navbar-links {
-    display: none;
-    flex-direction: column;
-    background-color: rgb(23, 112, 108);
-    padding: 10px;
-}
-
-.navbar-links.active {
+    cursor: pointer;
+  }
+  
+  .navbar-links {
     display: flex;
-}
-
-.navbar-links li {
-    text-align: center;
-    padding: 10px;
-}
-
-.nav-link {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .navbar-links li {
+    padding: 5px 10px;
+  }
+  
+  .nav-link {
     color: white;
     text-decoration: none;
-    font-weight: 300;
-    font-size: 20px;
-}
+    font-size: 18px;
+  }
+  
+  .nav-link:hover {
+    color: black;
+    font-weight: bold;
+    background-color: rgba(0, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+  }
 
-.nav-link:hover {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: 800;
-    background-color: rgba(0, 255, 255, 0.247);
-    border-radius: 10px;
-}
+/*FIM DO HEADER*/ 
 
-.close-menu {
-    display: block;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .header h1 {
-        font-size: 30px;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-
-
-    .navbar-links {
-        display: none;
-    }
-}
-
-/* Overlay style */
-.menu-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: 999; /* Ensure it is above other elements */
-}
-
-.menu-overlay.active {
-    display: block;
-}
-
+/*PAGE-MAPA*/
 .page-principal {
-    background-color: rgb(8, 37, 36);
-    color: white;
-    padding: 200px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 10px;
+  display: flex;
+  background: linear-gradient(90deg, #17807c, #6b2e83);
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 80px 20px;
+  text-align: left;
+  flex-wrap: wrap;
 }
 
-.page-principal h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+.map-content {
+  max-width: 600px;
 }
 
-.page-principal p {
-    font-size: 19px;
-    margin-bottom: 15px;
+.map-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+  
+.map-content {
+  flex: 1;
+  min-width: 260px;
+  max-width: 600px;
+}
+
+.map-img {
+  flex: 1;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* Texto e botão */
+.map-text {
+  font-size: 26px;
+  font-weight: 800;
+  color: #f5f5f5;
+}
+
+.map-text2 {
+  font-size: 16px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #f5f5f5;
 }
 
 .baixar-mapa {
-    background-color: #00d9ff96;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+  background: linear-gradient(90deg, #4f8b89, #b4b0b6);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight:600;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .baixar-mapa:hover {
-    background-color: #0057b36c;
+  opacity: 0.9;
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #282b2a, #5a5a5a);
 }
 
 @media (max-width: 768px) {
-    .page-principal {
-        padding: 15px;
-        margin: 5px;
-    }
-    .page-principal h2 {
-        font-size: 23px;
-    }
-    .page-principal p {
-        font-size: 16px;
-    }
-    .btn {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-    .baixar-mapa{
-        font-weight: 600;
-        font-size: 20px;
-    }
-}
+  .page-principal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .map-content {
+    text-align: center;
+  }
+}
+/*PAGE-MAPA*/
+  
 /*TABELA DE HORARIO DE ONIBUS*/
 .horario-onibus {
-    background-color: #f5f5f5;
+    background: linear-gradient(90deg, #17807c, #6b2e83);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
 }
 
 .horario-onibus h2 {
-    color: rgb(23, 112, 108);
+    color: rgb(255, 255, 255);
     font-size: 26px;
     margin-bottom: 10px;
+    font-weight: 900;
 }
 
 .title-acima{
@@ -215,8 +173,8 @@ body {
 } 
 
 .horario-onibus p {
-    color: #555;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 16px;
     margin-bottom: 20px;
     font-weight: 400;
 }
@@ -226,11 +184,11 @@ body {
     font-size: 17px;
 }
 
-/* Estilização da Tabela */
-table {
+.hour-bus {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    border-style:inherit;
     border-collapse: collapse;
     background: white;
     border-radius: 10px;
@@ -275,119 +233,122 @@ tr.titulo td {
     font-size: 18px;
 }
 
-@media (max-width: 768px) {
-    table {
+@media screen and (max-width: 720px) {
+    table{
         width: 100%;
     }
 
     th, td {
-        font-size: 14px;
-        padding: 8px;
-    }
+      padding: 8px;
+      font-size: 14px;
+      font-weight: 600;
+  }
 
-    .title-event{
-        font-size: 25px;
-        font-weight: 600;
+}
+/*FIM DA TABELA DE HORARIO DE ONIBUS*/
 
-    }
-        
-/*TABELA DE HORARIO DE ONIBUS*/
-.carrossel-container {
+  .title-event{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .eventos {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .carrossel-container {
     position: relative;
-    max-width: 350px;
-    margin: auto;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carrossel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.evento {
-    min-width: 100%;
-    position: relative;
-}
-
-img {
     width: 100%;
+  }
+  
+  .carrossel {
+    display: flex;
+    flex-wrap: nowrap; /* ❌ Nunca deixar wrap em carrossel */
+    gap: 20px;
+    transition: transform 0.5s ease;
+  }
+  
+  
+  .evento {
+    scroll-snap-align: center;
+    flex: 0 0 80%; /* ocupa 80% da largura no mobile */
+    background-color: #fff;
     border-radius: 10px;
-}
-
-.info {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
+    margin: 0 10px; /* 🔹 espaçamento lateral entre eventos */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  
+  
+  .evento img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .evento .info {
     padding: 10px;
-    border-radius: 5px;
-    width: 90%;
-}
-
-.prev, .next {
+    text-align: left;
+  }
+  
+  .prev, .next {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #178070;
     border: none;
     padding: 10px;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 20px;
     font-size: 20px;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-.prev, .next:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.title-event{
-    text-align: center;
-}
-
-
-
-/*FOOTER*/
-.footer {
+    z-index: 2;
+  }
+  
+  .prev {
+    left: 5px;
+  }
+  
+  .next {
+    right: 5px;
+  }
+  
+  /* Desktop */
+  @media (min-width: 769px) {
+    .evento {
+      flex: 0 0 300px;
+    }
+  }
+  
+  .footer {
     background-color: rgb(23, 112, 108);
     color: white;
     text-align: center;
-    padding: 15px 10px;
-    font-size: 14px;
-}
-
-.footer .social-icons {
-    margin-top: 5px;
-}
-
-.footer .social-icons i{
-    font-size: 25px;
-}
-
-
-.footer .social-icons a {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    margin: 0 10px;
-}
-
-.footer p {
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-weight: 600;
+    padding: 20px 10px;
+  }
   
-}
-
-
-.footer .social-icons a:hover {
-    color: #ddd;
-}
-/*FOOTER*/
+  .footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      background-color: rgb(23, 112, 108);
+      padding: 10px;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+  

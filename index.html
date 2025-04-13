@@ -9,22 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
-    <!-- FIM DA GOOGLE FONTS -->
 
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <!-- FIM DO BOOTSTRAP ICONS -->
 
     <!-- ICONS REMIX -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" />
-    <!-- FIM DO ICONS REMIX -->
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- FIM DO FONT AWESOME -->
 
-    <link rel="stylesheet" a href="style.css" />
-    <title>testando</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Versão-Teste</title>
 </head>
 
 <body>
@@ -35,38 +33,36 @@
             <span class="menu-icon">☰</span>
         </div>
 
-        <ul class="navbar-links">
-            <li><a class="nav-link" href="#about">Mapa</a></li>
-            <li><a class="nav-link" href="#oi">Onibus</a></li>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a class="nav-link" href="#page-principal">Mapa</a></li>
+            <li><a class="nav-link" href="#horario-onibus">Ônibus</a></li>
             <li><a class="nav-link active" href="#">Home</a></li>
             <li><a class="nav-link" href="#events">Eventos</a></li>
-            <li><a class="nav-link" href="#atletica">Atletica</a></li>
+            <li><a class="nav-link" href="#atletica">Atlética</a></li>
         </ul>
-
-        <div class="menu-overlay" id="menuOverlay"></div>
 
         <h1>Bem-vindo, calouro!</h1>
     </div>
 
     <!-- MAPA -->
     <section id="page-principal" class="page-principal">
-            <h2>Comece sua jornada universitária!</h2>
-            <p>
-                Conheça o campus da Anhembi! Baixe o mapa clicando no botão abaixo!
-            </p>
-
-        <!-- Botão para baixar o mapa -->
+        <div class="map-content">
+        <h2 class="map-text">Comece sua jornada universitária!</h2>
+        <p class="map-text2">Conheça o campus da Anhembi! Baixe o mapa clicando no botão abaixo!</p>
         <a href="images/logo-anhembi-removebg-preview.png" download>
-            <button class="baixar-mapa">Baixar Mapa</button>
+            <button class="baixar-mapa">Baixar Mapa</button>    
         </a>
+        </div>
+
+        <img src="images/istockphoto-1419580307-612x612.jpg" alt="imagem de amostra" class="map-img">
     </section>
 
-    <!-- SEÇÃO HORÁRIO DE ÔNIBUS -->
+    <!-- ÔNIBUS -->
     <section id="horario-onibus" class="horario-onibus">
         <h2>Horários de Ônibus para a Faculdade</h2>
         <p>Confira as opções de ônibus, conforme seu local e destino!</p>
 
-        <table>
+        <table class="hour-bus">
             <caption class="title-acima">
                 Horários de Ônibus
             </caption>
@@ -79,7 +75,6 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- PARA IR EMBORA-->
                 <tr class="titulo">
                     <td colspan="4">Para chegar</td>
                 </tr>
@@ -87,29 +82,26 @@
                     <td>Terminal SP</td>
                     <td>Anhembi</td>
                     <td>Ônibus A</td>
-                    <td>06:30, 08:00, 09:30,</td>
+                    <td>06:30, 08:00, 09:30</td>
                 </tr>
                 <tr>
                     <td>Terminal SP</td>
                     <td>Anhembi</td>
                     <td>Ônibus B</td>
-                    <td>06:30, 08:00, 09:30,</td>
+                    <td>06:30, 08:00, 09:30</td>
                 </tr>
                 <tr>
                     <td>Terminal SA</td>
                     <td>Anhembi</td>
                     <td>Ônibus C</td>
-                    <td>06:30, 08:00, 09:30,</td>
+                    <td>06:30, 08:00, 09:30</td>
                 </tr>
                 <tr>
                     <td>Terminal SA</td>
                     <td>Anhembi</td>
                     <td>Ônibus D</td>
-                    <td>06:30, 08:00, 09:30,</td>
+                    <td>06:30, 08:00, 09:30</td>
                 </tr>
-                <!-- PARA IR EMBORA-->
-
-                <!-- PARA IR ATÉ A ANHEMBI-->
                 <tr class="titulo">
                     <td colspan="4">Para ir embora</td>
                 </tr>
@@ -117,69 +109,68 @@
                     <td>Anhembi</td>
                     <td>Terminal SP</td>
                     <td>Ônibus A</td>
-                    <td>06:30, 08:00, 09:30,</td>
+                    <td>06:30, 08:00, 09:30</td>
                 </tr>
                 <tr>
                     <td>Anhembi</td>
                     <td>Terminal SP</td>
                     <td>Ônibus B</td>
-                    <td>06:30, 08:00, 09:30,</td>
+                    <td>06:30, 08:00, 09:30</td>
                 </tr>
                 <tr>
                     <td>Anhembi</td>
                     <td>Terminal SA</td>
                     <td>Ônibus C</td>
-                    <td>06:30, 08:00, 09:30,</td>
+                    <td>06:30, 08:00, 09:30</td>
                 </tr>
                 <tr>
                     <td>Anhembi</td>
                     <td>Terminal SA</td>
                     <td>Ônibus C</td>
-                    <td>06:30, 08:00, 09:30,</td>
+                    <td>06:30, 08:00, 09:30</td>
                 </tr>
-
-                <!-- PARA IR ATÉ A ANHEMBI-->
             </tbody>
         </table>
     </section>
 
     <section id="events" class="eventos">
-        <h1 class="title-event">EVENTOS</h1>
+        <h1 class="title-event">Eventos</h1>
         <div class="carrossel-container">
             <div class="carrossel">
+
                 <div class="evento">
-                    <img src="images/connect.jpg" alt="Evento 1">
+                    <img src="images/connect.jpg" alt="Evento 1" />
                     <div class="info">
                         <h3>Connect - Athon</h3>
                         <p>📅 12 de Abril - 18h</p>
                     </div>
                 </div>
+
                 <div class="evento">
-                    <img src="images/maratona.png" alt="Evento 2">
+                    <img src="images/maratona.png" alt="Evento 2" />
                     <div class="info">
                         <h3>Maratona 2025</h3>
                         <p>📅 25 de Maio - 14h</p>
                     </div>
                 </div>
+
                 <div class="evento">
-                    <img src="images/EVENTOS=DEMAIS.jpg" alt="Evento 3">
+                    <img src="images/EVENTOS=DEMAIS.jpg" alt="Evento 3" />
                     <div class="info">
                         <h3>Tech Land</h3>
                         <p>📅 10 de Junho - 19h</p>
-                    </div>
                 </div>
-                <div class="evento">
-                    <img src="images/EVENTOS=DEMAIS.jpg" alt="Evento 3">
-                    <div class="info">
-                        <h3>Exposição de Arte</h3>
-                        <p>📅 09 de Outubro - 19h</p>
-                    </div>
-                </div>
+
             </div>
-    
+        </div>
+            
+
+            <!-- Botões fora do carrossel -->
             <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
             <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+        </div>
     </section>
+
 
     <footer class="footer">
         <p>&copy; 2025 App Calouro. Todos os direitos reservados.</p>
@@ -191,7 +182,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <!-- Link para o seu JavaScript -->
 </body>
 
 </html>
