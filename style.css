@@ -49,6 +49,7 @@ body {
     margin-top: 10px;
     flex-wrap: wrap;
     gap: 10px;
+    background: linear-gradient(90deg, #17807c, #6b2e83);
   }
   
   .navbar-links li {
@@ -58,13 +59,13 @@ body {
   .nav-link {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
   }
   
   .nav-link:hover {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    background-color: rgba(0, 255, 255, 0.3);
+    background-color: #6b2e8327;
     border-radius: 5px;
     padding: 5px;
   }
@@ -247,6 +248,7 @@ tr.titulo td {
 }
 /*FIM DA TABELA DE HORARIO DE ONIBUS*/
 
+/*SEÇÃO EVENTOS*/
   .title-event{
     color: #ffffff;
     font-size: 30px;
@@ -321,7 +323,67 @@ tr.titulo td {
       flex: 0 0 300px;
     }
   }
+
+.atletica {
+    background: linear-gradient(90deg, #17807c, #6b2e83);
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.atletica .title-atletica {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.atletica p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.atletica-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.atletica-card {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.atletica-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.atletica-card h3 {
+    color: #17807c;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.atletica-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*FIM DA ABA ATLETICA*/
+
+
   
+  /*RODAPÉ*/
   .footer {
     background-color: rgb(23, 112, 108);
     color: white;
@@ -351,4 +413,5 @@ tr.titulo td {
       display: flex;
     }
   }
+/*FIM DO RODAPÉ*/
   
