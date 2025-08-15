@@ -1,30 +1,29 @@
-# App Calouros
-― Bem-vindo ao projeto "Guia do Calouro", um aplicativo moderno e responsivo desenvolvido para facilitar a adaptação dos novos alunos à universidade!
+#🔑 Gerador de Senhas
 
-# 📸 Objetivo do projeto
-― O principal propósito desta plataforma é fornecer informações essenciais para os calouros, tornando sua experiência acadêmica mais organizada e acessível. O aplicativo foi criado em equipe, com foco em usabilidade, funcionalidade e interatividade..
+― Bem-vindo ao projeto "Gerador de Senhas", uma aplicação simples, moderna e responsiva desenvolvida para criar senhas seguras e personalizadas de forma prática e rápida!
 
-# 💻 Tecnologias Implementadas
-― HTML5: Estrutura semântica bem definida para fácil navegação.
+#📸 Objetivo do Projeto
 
-― CSS3: Estilização avançada utilizando Flexbox e Grid para um layout intuitivo e moderno.
+― O principal propósito desta plataforma é auxiliar usuários a protegerem suas contas e dados pessoais através da geração de senhas fortes, únicas e difíceis de serem quebradas. Criado com foco em usabilidade, segurança e acessibilidade, o aplicativo é intuitivo e eficiente.
 
-― JavaScript: Implementação de funcionalidades interativas, como menus dinâmicos e exibição de informações em tempo real.
+#💻 Tecnologias Implementadas
 
-― Frameworks Modernos: Possível integração com Bootstrap para otimização e responsividade.
+― HTML5: Estrutura semântica bem organizada para melhor acessibilidade e navegação.
 
-― Responsividade: Layout totalmente adaptável para dispositivos móveis, garantindo uma experiência fluida
+― CSS3: Estilização responsiva e moderna, com uso de Flexbox e Grid para layout limpo e adaptável.
 
-# 🌐 Funcionalidades pensadas
-✅ Mapa Interativo: Localização dos principais pontos da universidade.
+― JavaScript: Lógica para geração de senhas, validações, cópia para área de transferência e interatividade com o usuário.
 
-✅ Horário de Ônibus: Consulta rápida dos horários e rotas disponíveis.
+― Responsividade: Layout totalmente adaptado para dispositivos móveis e desktops.
 
-✅ Serviços Acadêmicos: Informações sobre secretaria, biblioteca, laboratórios e outros recursos.
+#🌐 Funcionalidades Pensadas
 
-✅ Eventos: Calendário atualizado com atividades e encontros universitários.
+✅ Geração Personalizada: Escolha o tamanho da senha e os tipos de caracteres (maiúsculas, minúsculas, números e símbolos).
 
-✅ Atlética: Informações sobre esportes, treinos e campeonatos.
+✅ Cópia Rápida: Copie a senha gerada para a área de transferência com apenas um clique.
 
-✅ Calendário Acadêmico: Datas importantes, provas e feriados universitários.
+✅ Indicação de Segurança: Mostra o nível de força da senha (fraca, média ou forte).
 
+✅ Interface Intuitiva: Layout simples e moderno, fácil de usar para qualquer tipo de usuário.
+
+✅ Totalmente Online: Não requer instalação, basta acessar o link da aplicação.
